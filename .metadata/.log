@@ -1,0 +1,280 @@
+!SESSION 2025-08-11 18:27:24.003 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=21.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data D:\MySpringBoot
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-11 18:27:27.200
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-11 18:27:28.704
+!MESSAGE Logback config file: D:\MySpringBoot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-11 18:27:39.357
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 18:27:39.662
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 18:27:39.701
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-11 18:27:43.296
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.348.0 initialized
+
+!ENTRY org.eclipse.jdt.core 4 4 2025-08-11 18:29:15.264
+!MESSAGE JavaBuilder handling CoreException while building: Hotel
+!STACK 1
+org.eclipse.core.runtime.CoreException: release 21 is not found in the system
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:90)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:175)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:359)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:89)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:687)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:210)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:668)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:604)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2457)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:642)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:154)
+	at org.eclipse.jst.common.project.facet.core.internal.JavaFacetUtil$1.run(JavaFacetUtil.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.IllegalArgumentException: release 21 is not found in the system
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:89)
+	... 20 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 0 2025-08-11 18:29:15.265
+!MESSAGE release 21 is not found in the system
+!STACK 0
+java.lang.IllegalArgumentException: release 21 is not found in the system
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:89)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:175)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:359)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:89)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:687)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:210)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:668)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:604)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2457)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:642)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:154)
+	at org.eclipse.jst.common.project.facet.core.internal.JavaFacetUtil$1.run(JavaFacetUtil.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2025-08-11 18:29:15.361
+!MESSAGE JavaBuilder handling CoreException while building: Hotel
+!STACK 1
+org.eclipse.core.runtime.CoreException: release 21 is not found in the system
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:90)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:175)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:359)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:89)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:687)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:210)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:601)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.jst.common.project.facet.core.internal.JavaFacetUtil$1.run(JavaFacetUtil.java:154)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.IllegalArgumentException: release 21 is not found in the system
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:89)
+	... 19 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 0 2025-08-11 18:29:15.362
+!MESSAGE release 21 is not found in the system
+!STACK 0
+java.lang.IllegalArgumentException: release 21 is not found in the system
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:89)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:175)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:359)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:89)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:687)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:210)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:601)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:490)
+	at org.eclipse.jst.common.project.facet.core.internal.JavaFacetUtil$1.run(JavaFacetUtil.java:154)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-08-11 18:30:54.377
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-08-11 18:30:54.378
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-08-11 18:30:54.380
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-08-11 18:30:54.382
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-08-11 18:30:54.392
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-08-11 18:30:54.398
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 18:47:30.399
+!MESSAGE [Info] Document is null for editor: HotelApplication.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 18:47:30.399
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MySpringBoot/Hotel/src/main/java/com/Dash/Hotel/HotelApplication.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 18:47:30.415
+!MESSAGE [Info] Document is null for editor: Student.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 18:47:30.415
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MySpringBoot/Hotel/src/main/java/User/Student.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 18:47:30.431
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 18:47:30.431
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MySpringBoot/Hotel/pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 18:47:30.494
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 18:47:30.494
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MySpringBoot/Hotel/src/main/resources/application.properties
+!SESSION 2025-08-11 18:47:35.281 -----------------------------------------------
+eclipse.buildId=4.35.0.20250306-0811
+java.version=21.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-11 18:47:38.417
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-11 18:47:39.775
+!MESSAGE Logback config file: D:\MySpringBoot\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-11 18:47:44.490
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 18:47:44.531
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 18:47:44.565
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-11 18:47:46.589
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.348.0 initialized
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-08-11 18:53:37.092
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-08-11 18:53:37.095
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-08-11 18:53:37.096
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-08-11 18:53:37.097
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-08-11 18:53:37.105
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-08-11 18:53:37.110
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 21:48:24.870
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MySpringBoot/Hotel/src/main/java/com/Dash/Hotel/Student.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 21:55:21.401
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 21:55:21.403
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MySpringBoot/Hotel/pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 21:55:22.722
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 21:55:22.723
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MySpringBoot/Hotel/src/main/resources/application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 21:55:25.004
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 21:55:25.004
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MySpringBoot/Hotel/pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 22:00:51.048
+!MESSAGE [Info] Document is null for editor: Student.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 22:00:51.048
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MySpringBoot/Hotel/src/main/java/com/Dash/Hotel/Student.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 22:00:51.094
+!MESSAGE [Info] Document is null for editor: index.html
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 22:00:51.094
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MySpringBoot/Hotel/src/main/resources/templates/index.html
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 22:00:51.125
+!MESSAGE [Info] Document is null for editor: HotelApplication.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-11 22:00:51.125
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/MySpringBoot/Hotel/src/main/java/com/Dash/Hotel/HotelApplication.java
+
+!ENTRY org.eclipse.core.jobs 4 2 2025-08-11 22:00:53.967
+!MESSAGE An internal error occurred during: "Launching D__MySpringBoot_Hotel_src_main_resources_templates_index.html".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.DebugPlugin.fireDebugEventSet(org.eclipse.debug.core.DebugEvent[])" because the return value of "org.eclipse.debug.core.DebugPlugin.getDefault()" is null
+	at org.eclipse.debug.core.model.DebugElement.fireEvent(DebugElement.java:91)
+	at org.eclipse.debug.core.model.DebugElement.fireTerminateEvent(DebugElement.java:138)
+	at org.eclipse.lsp4e.debug.debugmodel.DSPDebugTarget.terminated(DSPDebugTarget.java:330)
+	at org.eclipse.lsp4e.debug.debugmodel.DSPDebugTarget.initialize(DSPDebugTarget.java:222)
+	at org.eclipse.lsp4e.debug.launcher.DSPLaunchDelegate.createDebugTarget(DSPLaunchDelegate.java:403)
+	at org.eclipse.lsp4e.debug.launcher.DSPLaunchDelegate.launch(DSPLaunchDelegate.java:384)
+	at org.eclipse.wildwebdeveloper.debug.node.VSCodeJSDebugDelegate.launch(VSCodeJSDebugDelegate.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:777)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:688)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1052)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

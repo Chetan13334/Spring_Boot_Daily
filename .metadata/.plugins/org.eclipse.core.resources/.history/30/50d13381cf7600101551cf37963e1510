@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Page</title>
+</head>
+<body>
+<form action="first"></form>
+<label>Enter your name</label>
+<input type ="text" name= "fname">
+
+</body>
+</html>
