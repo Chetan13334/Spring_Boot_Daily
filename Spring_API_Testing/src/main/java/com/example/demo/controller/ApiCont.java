@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ApiCont {
+	
 	@RequestMapping(value = "/java" , method = RequestMethod.GET)
 	public String first() {
 		return "This api calls java";
@@ -93,8 +94,4 @@ public class ApiCont {
 	public String support() {
 		return "This is made for Support Section";
 	}
-
-	
-	
-	
 }
