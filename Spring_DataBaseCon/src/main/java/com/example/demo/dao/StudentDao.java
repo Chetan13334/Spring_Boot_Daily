@@ -13,8 +13,6 @@ import com.example.demo.service.StudentSer;
 @Repository
 public class StudentDao {
 	
-	
-	
 	@Autowired
 	SessionFactory factory;
 	
